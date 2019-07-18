@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  color: #4c4c4c;
+  font-family: Consolas, Menlo, Monaco, Lucida Console;
+}
+
+em {
+  display: block;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 20px;
+}
+
+#touchme {
+  height: 70px;
+  width: 100%;
+  display: flex;
+
+  /* align text inside */
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  background: orange;
+  color: white;
+  font-size: 1.2em;
+}
+
+#container {
+  box-sizing: border-box;
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+}
+
+#baby,
+#dad,
+#mom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+#baby {
+  flex: 3;
+}
+
+.description {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar img {
+  height: 100px;
+  flex: 1;
+}
+
+#baby-bucket,
+#mom-bucket,
+#dad-bucket {
+  margin-top: 15px;
+  padding: 10px 5px;
+  min-height: 200px;
+  border: 2px dashed #4c4c4c;
+  border-radius: 5px;
+}
+
+#baby-bucket img {
+  zoom: 0.7;
+}
+
+#mom-bucket img {
+  width: 50px;
+  margin-left: 10px;
+}
