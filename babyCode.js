@@ -12,7 +12,7 @@ function addDrop() {
 
 function askDone() {
   const doneYet = document.createElement("div");
-  doneYet.innerText = "Did he finish?";
+  doneYet.innerText = "Is he finished?";
   dadBucket.appendChild(doneYet);
 }
 
@@ -23,5 +23,5 @@ function putDiaper() {
 }
 
 touchme.addEventListener("mousemove", addDrop);
-touchme.addEventListener("mousemove", askDone);
-touchme.addEventListener("mousemove", putDiaper);
+touchme.addEventListener("mousemove", throttle(askDone, 1000));
+// touchme.addEventListener("mousemove", putDiaper);
