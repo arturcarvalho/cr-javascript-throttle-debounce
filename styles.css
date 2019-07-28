@@ -13,11 +13,22 @@ body {
 em {
   display: block;
 }
+
 h1 {
   font-size: 1.5em;
   text-align: center;
   padding: 20px;
 }
+
+#container {
+  box-sizing: border-box;
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* BABY */
 
 #touchme {
   height: 70px;
@@ -34,14 +45,6 @@ h1 {
   background: orange;
   color: white;
   font-size: 1.2em;
-}
-
-#container {
-  box-sizing: border-box;
-  display: flex;
-
-  justify-content: space-between;
-  width: 100%;
 }
 
 #baby,
@@ -89,4 +92,35 @@ h1 {
 #mom-bucket img {
   width: 40px;
   margin-left: 10px;
+}
+
+/* TEXT */
+
+.search,
+.autosave {
+  max-width: 450px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.search h1,
+.autosave h1 {
+  background: orange;
+
+  border-radius: 5px;
+  color: white;
+}
+
+#search-input,
+#autosave-textarea {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#search-log, #autosave-log {
+  text-align: left;
+  margin-top: 20px;
 }
