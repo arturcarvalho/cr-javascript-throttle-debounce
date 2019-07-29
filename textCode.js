@@ -17,6 +17,4 @@ function logAutosave() {
 
 // FUN PART BELOW
 searchInput.addEventListener("input", debounce(logSearch, 1500));
-autosaveTextarea.addEventListener("input", _.throttle(logAutosave, 2000, {
-  leading: false 
-}));
+autosaveTextarea.addEventListener("input", throttle1(logAutosave, 2000));
