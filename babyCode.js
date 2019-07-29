@@ -23,6 +23,6 @@ function putDiaper() {
 }
 
 // FUN PART BELOW
-// touchme.addEventListener("mousemove", addDrop);
-// touchme.addEventListener("mousemove", putDiaper);
-// touchme.addEventListener("mousemove", askDone);
+touchme.addEventListener("mousemove", addDrop);
+touchme.addEventListener("mousemove", debounce(putDiaper, 1000));
+touchme.addEventListener("mousemove", throttle2(askDone, 2000));
