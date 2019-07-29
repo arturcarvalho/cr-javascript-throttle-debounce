@@ -1,3 +1,4 @@
+
 function debounce(func, wait) {
   console.log("Debounce called.");
 
@@ -8,6 +9,11 @@ function debounce(func, wait) {
   };
 }
 
+/**
+ * Throttle with no leading edge, but with trailing edge.
+ * @param {*} func  The function to throttle.
+ * @param {*} wait The number of milliseconds to throttle invocations to.
+ */
 function throttle1(func, wait) {
   console.log("Throttle1 called.");
   var timeout = null;
@@ -23,6 +29,11 @@ function throttle1(func, wait) {
   };
 }
 
+/**
+ * Throttle with leading edge, but no trailing edge.
+ * @param {*} func  The function to throttle.
+ * @param {*} wait The number of milliseconds to throttle invocations to.
+ */
 function throttle2(func, wait) {
   console.log("throttle2 called.");
   var isWaiting = false;
